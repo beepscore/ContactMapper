@@ -7,6 +7,8 @@
 //
 
 #import "ContactMapperViewController.h"
+#import "ContactAnnotation.h"
+#import "AddressGeocoder.h"
 
 @implementation ContactMapperViewController
 
@@ -39,6 +41,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+- (void)recenterMap {
+    NSArray *coordinates = [self.mapView valueForKeyPath:@"annotations.coordinate"];
+    CLLocationCoordinate2D maxCoord = {-90.0f, -180.0f};
+    CLLocationCoordinate2D minCoord = {90.0f, 180.0f};
+    for (NSValue *value in coordinates) {
+        CLLocationCoordinate2D coord = {0.0f, 0.0f};
+        [value getValue:&coord];
+        if (coord.longitude > maxCoord.longitude) {
+            maxCoord.longitude = coord.longitude;
+        }
+        if (coord.latitude > maxCoord.latitude) {
+            maxCoord.latitude = coord.latitude;
+        }
+        if (coord.longitude < minCoord.longitude) {
+            minCoord.longitude = coord.longitude;
+        }
+        if (coord.latitude < minCoord.latitude) {
+            minCoord.latitude = coord.latitude;
+        }        
+    }
+    MKCoordinateRegion region = {{0.0f, 0.0f}, {0.0f, 0.0f}};
+    region.center.longitude = (minCoord.longitude + maxCoord.longitude) / 2.0;
+    region.center.latitude = (minCoord.latitude + maxCoord.latitude) / 2.0;
+    region.span.longitudeDelta = maxCoord.longitude - minCoord.longitude;
+    region.span.latitudeDelta = maxCoord.latitude - minCoord.latitude;
+    [self.mapView setRegion:region animated:YES];
+}
+
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (nil != self.newAnnotation) {
+        [self.mapView addAnnotation:self.newAnnotation];
+        self.newAnnotation = nil;
+    }
+    if (self.mapView.annotations.count > 1) {
+        [self recenterMap];
+    }
+}
+
 
 
 /*
@@ -88,13 +131,13 @@
 }
 
 
-
 - (void)dealloc {
     [self cleanUp];
     [super dealloc];
 }
 
-#pragma mark Location methods
+
+#pragma mark -
 - (void)setCurrentLocation:(CLLocation *)location {
     // region is a C structure with a center and a span
     MKCoordinateRegion region = {{0.0f, 0.0f}, {0.0f, 0.0f}};
@@ -104,7 +147,7 @@
     [self.mapView setRegion:region animated:YES];
 }
 
-#pragma mark -
+
 - (IBAction)choose {
     ABPeoplePickerNavigationController *picker =
     [[ABPeoplePickerNavigationController alloc] init];
@@ -114,5 +157,65 @@
     [picker release];
 }
 
+#pragma mark People Picker Delegate Methods
+
+- (void)peoplePickerNavigationControllerDidCancel:
+(ABPeoplePickerNavigationController *)peoplePicker {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+
+- (BOOL)peoplePickerNavigationController:
+(ABPeoplePickerNavigationController *)peoplePicker
+      shouldContinueAfterSelectingPerson:(ABRecordRef)person {
+    return YES;
+}
+
+
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker
+      shouldContinueAfterSelectingPerson:(ABRecordRef)person
+                                property:(ABPropertyID)property
+                              identifier:(ABMultiValueIdentifier)identifier {
+    if (kABPersonAddressProperty == property) {
+        NSString *fullName = (NSString *)ABRecordCopyCompositeName(person);
+        CLLocationCoordinate2D coordinate = {0.0f, 0.0f};
+        self.newAnnotation = [ContactAnnotation annotationWithCoordinate:coordinate];
+        self.newAnnotation.title = fullName;
+        self.newAnnotation.person = person;
+        [fullName release];
+        ABMultiValueRef addresses = ABRecordCopyValue(person, kABPersonAddressProperty);
+        CFIndex selectedAddressIndex = ABMultiValueGetIndexForIdentifier(addresses, identifier);
+        CFDictionaryRef address = ABMultiValueCopyValueAtIndex(addresses, selectedAddressIndex);
+        self.newAnnotation.coordinate = [AddressGeocoder locationOfAddress:address];
+        [self dismissModalViewControllerAnimated:YES];
+    }
+    return NO;
+}
+
+
+#pragma mark MKMapViewDelegate methods
+- (MKAnnotationView *)mapView:(MKMapView *)aMapView
+            viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKPinAnnotationView *view = nil;
+    if (annotation != aMapView.userLocation) {
+        view = (MKPinAnnotationView *)
+        [aMapView dequeueReusableAnnotationViewWithIdentifier:@"identifier"];
+        if (nil == view) {
+            view = [[[MKPinAnnotationView alloc]
+                     initWithAnnotation:annotation
+                     reuseIdentifier:@"identifier"]
+                    autorelease];
+        }
+        [view setPinColor:MKPinAnnotationColorPurple];
+        [view setCanShowCallout:YES];
+        [view setAnimatesDrop:YES];
+    } else {
+        CLLocation *location = [[CLLocation alloc]
+                                initWithLatitude:annotation.coordinate.latitude
+                                longitude:annotation.coordinate.longitude];
+        [self setCurrentLocation:location];
+    }
+    return view;
+}
 
 @end

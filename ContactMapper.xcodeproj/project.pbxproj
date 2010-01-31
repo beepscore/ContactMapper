@@ -20,6 +20,43 @@
 		DE80AF8F11152BA200CBD644 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE80AF8E11152BA200CBD644 /* AddressBookUI.framework */; };
 		DE9DC950111507B7009CFFDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9DC94F111507B7009CFFDE /* CoreLocation.framework */; };
 		DE9DC954111507C9009CFFDE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9DC953111507C9009CFFDE /* MapKit.framework */; };
+		DEF2CAE41115848800BF706B /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAD11115848800BF706B /* CTidy.m */; };
+		DEF2CAE51115848800BF706B /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAD31115848800BF706B /* CXMLDocument_CreationExtensions.m */; };
+		DEF2CAE61115848800BF706B /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAD51115848800BF706B /* CXMLDocument_PrivateExtensions.m */; };
+		DEF2CAE71115848800BF706B /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAD71115848800BF706B /* CXMLDocument.m */; };
+		DEF2CAE81115848800BF706B /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAD91115848800BF706B /* CXMLElement_CreationExtensions.m */; };
+		DEF2CAE91115848800BF706B /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CADB1115848800BF706B /* CXMLElement.m */; };
+		DEF2CAEA1115848800BF706B /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CADD1115848800BF706B /* CXMLNode_CreationExtensions.m */; };
+		DEF2CAEB1115848800BF706B /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CADF1115848800BF706B /* CXMLNode_PrivateExtensions.m */; };
+		DEF2CAEC1115848800BF706B /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAE11115848800BF706B /* CXMLNode_XPathExtensions.m */; };
+		DEF2CAED1115848800BF706B /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAE31115848800BF706B /* CXMLNode.m */; };
+		DEF2CB23111584CC00BF706B /* access.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAEF111584CC00BF706B /* access.c */; };
+		DEF2CB24111584CC00BF706B /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF1111584CC00BF706B /* alloc.c */; };
+		DEF2CB25111584CC00BF706B /* attrask.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF2111584CC00BF706B /* attrask.c */; };
+		DEF2CB26111584CC00BF706B /* attrdict.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF3111584CC00BF706B /* attrdict.c */; };
+		DEF2CB27111584CC00BF706B /* attrget.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF5111584CC00BF706B /* attrget.c */; };
+		DEF2CB28111584CC00BF706B /* attrs.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF6111584CC00BF706B /* attrs.c */; };
+		DEF2CB29111584CC00BF706B /* buffio.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAF8111584CC00BF706B /* buffio.c */; };
+		DEF2CB2A111584CC00BF706B /* charsets.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAFA111584CC00BF706B /* charsets.c */; };
+		DEF2CB2B111584CC00BF706B /* clean.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAFC111584CC00BF706B /* clean.c */; };
+		DEF2CB2C111584CC00BF706B /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CAFE111584CC00BF706B /* config.c */; };
+		DEF2CB2D111584CC00BF706B /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB00111584CC00BF706B /* entities.c */; };
+		DEF2CB2E111584CC00BF706B /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB02111584CC00BF706B /* fileio.c */; };
+		DEF2CB2F111584CC00BF706B /* iconvtc.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB05111584CC00BF706B /* iconvtc.c */; };
+		DEF2CB30111584CC00BF706B /* istack.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB07111584CC00BF706B /* istack.c */; };
+		DEF2CB31111584CC00BF706B /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB08111584CC00BF706B /* lexer.c */; };
+		DEF2CB32111584CC00BF706B /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB0A111584CC00BF706B /* localize.c */; };
+		DEF2CB33111584CC00BF706B /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB0B111584CC00BF706B /* mappedio.c */; };
+		DEF2CB34111584CC00BF706B /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB0E111584CC00BF706B /* parser.c */; };
+		DEF2CB35111584CC00BF706B /* pprint.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB11111584CC00BF706B /* pprint.c */; };
+		DEF2CB36111584CC00BF706B /* streamio.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB13111584CC00BF706B /* streamio.c */; };
+		DEF2CB37111584CC00BF706B /* tagask.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB15111584CC00BF706B /* tagask.c */; };
+		DEF2CB38111584CC00BF706B /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB16111584CC00BF706B /* tags.c */; };
+		DEF2CB39111584CC00BF706B /* tidylib.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB1B111584CC00BF706B /* tidylib.c */; };
+		DEF2CB3A111584CC00BF706B /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB1C111584CC00BF706B /* tmbstr.c */; };
+		DEF2CB3B111584CC00BF706B /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB1E111584CC00BF706B /* utf8.c */; };
+		DEF2CB3C111584CC00BF706B /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = DEF2CB21111584CC00BF706B /* win32tc.c */; };
+		DEF30CC611157C8D00972713 /* AddressGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF30CC511157C8D00972713 /* AddressGeocoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +79,81 @@
 		DE80AF8E11152BA200CBD644 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		DE9DC94F111507B7009CFFDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DE9DC953111507C9009CFFDE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DEF2CAD01115848800BF706B /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		DEF2CAD11115848800BF706B /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		DEF2CAD21115848800BF706B /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		DEF2CAD31115848800BF706B /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		DEF2CAD41115848800BF706B /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		DEF2CAD51115848800BF706B /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		DEF2CAD61115848800BF706B /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		DEF2CAD71115848800BF706B /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		DEF2CAD81115848800BF706B /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		DEF2CAD91115848800BF706B /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		DEF2CADA1115848800BF706B /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		DEF2CADB1115848800BF706B /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		DEF2CADC1115848800BF706B /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		DEF2CADD1115848800BF706B /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		DEF2CADE1115848800BF706B /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		DEF2CADF1115848800BF706B /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		DEF2CAE01115848800BF706B /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		DEF2CAE11115848800BF706B /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		DEF2CAE21115848800BF706B /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		DEF2CAE31115848800BF706B /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		DEF2CAEE111584A600BF706B /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		DEF2CAEF111584CC00BF706B /* access.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = access.c; sourceTree = "<group>"; };
+		DEF2CAF0111584CC00BF706B /* access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = access.h; sourceTree = "<group>"; };
+		DEF2CAF1111584CC00BF706B /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		DEF2CAF2111584CC00BF706B /* attrask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrask.c; sourceTree = "<group>"; };
+		DEF2CAF3111584CC00BF706B /* attrdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrdict.c; sourceTree = "<group>"; };
+		DEF2CAF4111584CC00BF706B /* attrdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrdict.h; sourceTree = "<group>"; };
+		DEF2CAF5111584CC00BF706B /* attrget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrget.c; sourceTree = "<group>"; };
+		DEF2CAF6111584CC00BF706B /* attrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrs.c; sourceTree = "<group>"; };
+		DEF2CAF7111584CC00BF706B /* attrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrs.h; sourceTree = "<group>"; };
+		DEF2CAF8111584CC00BF706B /* buffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffio.c; sourceTree = "<group>"; };
+		DEF2CAF9111584CC00BF706B /* buffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffio.h; sourceTree = "<group>"; };
+		DEF2CAFA111584CC00BF706B /* charsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = charsets.c; sourceTree = "<group>"; };
+		DEF2CAFB111584CC00BF706B /* charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = charsets.h; sourceTree = "<group>"; };
+		DEF2CAFC111584CC00BF706B /* clean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clean.c; sourceTree = "<group>"; };
+		DEF2CAFD111584CC00BF706B /* clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clean.h; sourceTree = "<group>"; };
+		DEF2CAFE111584CC00BF706B /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		DEF2CAFF111584CC00BF706B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DEF2CB00111584CC00BF706B /* entities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entities.c; sourceTree = "<group>"; };
+		DEF2CB01111584CC00BF706B /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entities.h; sourceTree = "<group>"; };
+		DEF2CB02111584CC00BF706B /* fileio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileio.c; sourceTree = "<group>"; };
+		DEF2CB03111584CC00BF706B /* fileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileio.h; sourceTree = "<group>"; };
+		DEF2CB04111584CC00BF706B /* forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forward.h; sourceTree = "<group>"; };
+		DEF2CB05111584CC00BF706B /* iconvtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iconvtc.c; sourceTree = "<group>"; };
+		DEF2CB06111584CC00BF706B /* iconvtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconvtc.h; sourceTree = "<group>"; };
+		DEF2CB07111584CC00BF706B /* istack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = istack.c; sourceTree = "<group>"; };
+		DEF2CB08111584CC00BF706B /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lexer.c; sourceTree = "<group>"; };
+		DEF2CB09111584CC00BF706B /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		DEF2CB0A111584CC00BF706B /* localize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localize.c; sourceTree = "<group>"; };
+		DEF2CB0B111584CC00BF706B /* mappedio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mappedio.c; sourceTree = "<group>"; };
+		DEF2CB0C111584CC00BF706B /* mappedio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mappedio.h; sourceTree = "<group>"; };
+		DEF2CB0D111584CC00BF706B /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		DEF2CB0E111584CC00BF706B /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		DEF2CB0F111584CC00BF706B /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		DEF2CB10111584CC00BF706B /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		DEF2CB11111584CC00BF706B /* pprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pprint.c; sourceTree = "<group>"; };
+		DEF2CB12111584CC00BF706B /* pprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pprint.h; sourceTree = "<group>"; };
+		DEF2CB13111584CC00BF706B /* streamio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streamio.c; sourceTree = "<group>"; };
+		DEF2CB14111584CC00BF706B /* streamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamio.h; sourceTree = "<group>"; };
+		DEF2CB15111584CC00BF706B /* tagask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagask.c; sourceTree = "<group>"; };
+		DEF2CB16111584CC00BF706B /* tags.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tags.c; sourceTree = "<group>"; };
+		DEF2CB17111584CC00BF706B /* tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tags.h; sourceTree = "<group>"; };
+		DEF2CB18111584CC00BF706B /* tidy-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tidy-int.h"; sourceTree = "<group>"; };
+		DEF2CB19111584CC00BF706B /* tidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidy.h; sourceTree = "<group>"; };
+		DEF2CB1A111584CC00BF706B /* tidyenum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidyenum.h; sourceTree = "<group>"; };
+		DEF2CB1B111584CC00BF706B /* tidylib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tidylib.c; sourceTree = "<group>"; };
+		DEF2CB1C111584CC00BF706B /* tmbstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tmbstr.c; sourceTree = "<group>"; };
+		DEF2CB1D111584CC00BF706B /* tmbstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmbstr.h; sourceTree = "<group>"; };
+		DEF2CB1E111584CC00BF706B /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		DEF2CB1F111584CC00BF706B /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		DEF2CB20111584CC00BF706B /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		DEF2CB21111584CC00BF706B /* win32tc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32tc.c; sourceTree = "<group>"; };
+		DEF2CB22111584CC00BF706B /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32tc.h; sourceTree = "<group>"; };
+		DEF30CC411157C8D00972713 /* AddressGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressGeocoder.h; sourceTree = "<group>"; };
+		DEF30CC511157C8D00972713 /* AddressGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressGeocoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +177,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DEF30CC411157C8D00972713 /* AddressGeocoder.h */,
+				DEF30CC511157C8D00972713 /* AddressGeocoder.m */,
 				1D3623240D0F684500981E51 /* ContactMapperAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ContactMapperAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* ContactMapperViewController.h */,
@@ -88,6 +202,7 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				DEF2CACA1115830D00BF706B /* TouchXML */,
 				29B97317FDCFA39411CA2CEA /* Resources-iPhone */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -126,6 +241,94 @@
 				DE80AF8E11152BA200CBD644 /* AddressBookUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEF2CACA1115830D00BF706B /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2CAEE111584A600BF706B /* TouchXML.h */,
+				DEF2CAD01115848800BF706B /* CTidy.h */,
+				DEF2CAD11115848800BF706B /* CTidy.m */,
+				DEF2CAD21115848800BF706B /* CXMLDocument_CreationExtensions.h */,
+				DEF2CAD31115848800BF706B /* CXMLDocument_CreationExtensions.m */,
+				DEF2CAD41115848800BF706B /* CXMLDocument_PrivateExtensions.h */,
+				DEF2CAD51115848800BF706B /* CXMLDocument_PrivateExtensions.m */,
+				DEF2CAD61115848800BF706B /* CXMLDocument.h */,
+				DEF2CAD71115848800BF706B /* CXMLDocument.m */,
+				DEF2CAD81115848800BF706B /* CXMLElement_CreationExtensions.h */,
+				DEF2CAD91115848800BF706B /* CXMLElement_CreationExtensions.m */,
+				DEF2CADA1115848800BF706B /* CXMLElement.h */,
+				DEF2CADB1115848800BF706B /* CXMLElement.m */,
+				DEF2CADC1115848800BF706B /* CXMLNode_CreationExtensions.h */,
+				DEF2CADD1115848800BF706B /* CXMLNode_CreationExtensions.m */,
+				DEF2CADE1115848800BF706B /* CXMLNode_PrivateExtensions.h */,
+				DEF2CADF1115848800BF706B /* CXMLNode_PrivateExtensions.m */,
+				DEF2CAE01115848800BF706B /* CXMLNode_XPathExtensions.h */,
+				DEF2CAE11115848800BF706B /* CXMLNode_XPathExtensions.m */,
+				DEF2CAE21115848800BF706B /* CXMLNode.h */,
+				DEF2CAE31115848800BF706B /* CXMLNode.m */,
+				DEF2CACF1115835100BF706B /* Tidy */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		DEF2CACF1115835100BF706B /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2CAEF111584CC00BF706B /* access.c */,
+				DEF2CAF0111584CC00BF706B /* access.h */,
+				DEF2CAF1111584CC00BF706B /* alloc.c */,
+				DEF2CAF2111584CC00BF706B /* attrask.c */,
+				DEF2CAF3111584CC00BF706B /* attrdict.c */,
+				DEF2CAF4111584CC00BF706B /* attrdict.h */,
+				DEF2CAF5111584CC00BF706B /* attrget.c */,
+				DEF2CAF6111584CC00BF706B /* attrs.c */,
+				DEF2CAF7111584CC00BF706B /* attrs.h */,
+				DEF2CAF8111584CC00BF706B /* buffio.c */,
+				DEF2CAF9111584CC00BF706B /* buffio.h */,
+				DEF2CAFA111584CC00BF706B /* charsets.c */,
+				DEF2CAFB111584CC00BF706B /* charsets.h */,
+				DEF2CAFC111584CC00BF706B /* clean.c */,
+				DEF2CAFD111584CC00BF706B /* clean.h */,
+				DEF2CAFE111584CC00BF706B /* config.c */,
+				DEF2CAFF111584CC00BF706B /* config.h */,
+				DEF2CB00111584CC00BF706B /* entities.c */,
+				DEF2CB01111584CC00BF706B /* entities.h */,
+				DEF2CB02111584CC00BF706B /* fileio.c */,
+				DEF2CB03111584CC00BF706B /* fileio.h */,
+				DEF2CB04111584CC00BF706B /* forward.h */,
+				DEF2CB05111584CC00BF706B /* iconvtc.c */,
+				DEF2CB06111584CC00BF706B /* iconvtc.h */,
+				DEF2CB07111584CC00BF706B /* istack.c */,
+				DEF2CB08111584CC00BF706B /* lexer.c */,
+				DEF2CB09111584CC00BF706B /* lexer.h */,
+				DEF2CB0A111584CC00BF706B /* localize.c */,
+				DEF2CB0B111584CC00BF706B /* mappedio.c */,
+				DEF2CB0C111584CC00BF706B /* mappedio.h */,
+				DEF2CB0D111584CC00BF706B /* message.h */,
+				DEF2CB0E111584CC00BF706B /* parser.c */,
+				DEF2CB0F111584CC00BF706B /* parser.h */,
+				DEF2CB10111584CC00BF706B /* platform.h */,
+				DEF2CB11111584CC00BF706B /* pprint.c */,
+				DEF2CB12111584CC00BF706B /* pprint.h */,
+				DEF2CB13111584CC00BF706B /* streamio.c */,
+				DEF2CB14111584CC00BF706B /* streamio.h */,
+				DEF2CB15111584CC00BF706B /* tagask.c */,
+				DEF2CB16111584CC00BF706B /* tags.c */,
+				DEF2CB17111584CC00BF706B /* tags.h */,
+				DEF2CB18111584CC00BF706B /* tidy-int.h */,
+				DEF2CB19111584CC00BF706B /* tidy.h */,
+				DEF2CB1A111584CC00BF706B /* tidyenum.h */,
+				DEF2CB1B111584CC00BF706B /* tidylib.c */,
+				DEF2CB1C111584CC00BF706B /* tmbstr.c */,
+				DEF2CB1D111584CC00BF706B /* tmbstr.h */,
+				DEF2CB1E111584CC00BF706B /* utf8.c */,
+				DEF2CB1F111584CC00BF706B /* utf8.h */,
+				DEF2CB20111584CC00BF706B /* version.h */,
+				DEF2CB21111584CC00BF706B /* win32tc.c */,
+				DEF2CB22111584CC00BF706B /* win32tc.h */,
+			);
+			path = Tidy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +389,43 @@
 				1D3623260D0F684500981E51 /* ContactMapperAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* ContactMapperViewController.m in Sources */,
 				DE80AF6F1115268B00CBD644 /* ContactAnnotation.m in Sources */,
+				DEF30CC611157C8D00972713 /* AddressGeocoder.m in Sources */,
+				DEF2CAE41115848800BF706B /* CTidy.m in Sources */,
+				DEF2CAE51115848800BF706B /* CXMLDocument_CreationExtensions.m in Sources */,
+				DEF2CAE61115848800BF706B /* CXMLDocument_PrivateExtensions.m in Sources */,
+				DEF2CAE71115848800BF706B /* CXMLDocument.m in Sources */,
+				DEF2CAE81115848800BF706B /* CXMLElement_CreationExtensions.m in Sources */,
+				DEF2CAE91115848800BF706B /* CXMLElement.m in Sources */,
+				DEF2CAEA1115848800BF706B /* CXMLNode_CreationExtensions.m in Sources */,
+				DEF2CAEB1115848800BF706B /* CXMLNode_PrivateExtensions.m in Sources */,
+				DEF2CAEC1115848800BF706B /* CXMLNode_XPathExtensions.m in Sources */,
+				DEF2CAED1115848800BF706B /* CXMLNode.m in Sources */,
+				DEF2CB23111584CC00BF706B /* access.c in Sources */,
+				DEF2CB24111584CC00BF706B /* alloc.c in Sources */,
+				DEF2CB25111584CC00BF706B /* attrask.c in Sources */,
+				DEF2CB26111584CC00BF706B /* attrdict.c in Sources */,
+				DEF2CB27111584CC00BF706B /* attrget.c in Sources */,
+				DEF2CB28111584CC00BF706B /* attrs.c in Sources */,
+				DEF2CB29111584CC00BF706B /* buffio.c in Sources */,
+				DEF2CB2A111584CC00BF706B /* charsets.c in Sources */,
+				DEF2CB2B111584CC00BF706B /* clean.c in Sources */,
+				DEF2CB2C111584CC00BF706B /* config.c in Sources */,
+				DEF2CB2D111584CC00BF706B /* entities.c in Sources */,
+				DEF2CB2E111584CC00BF706B /* fileio.c in Sources */,
+				DEF2CB2F111584CC00BF706B /* iconvtc.c in Sources */,
+				DEF2CB30111584CC00BF706B /* istack.c in Sources */,
+				DEF2CB31111584CC00BF706B /* lexer.c in Sources */,
+				DEF2CB32111584CC00BF706B /* localize.c in Sources */,
+				DEF2CB33111584CC00BF706B /* mappedio.c in Sources */,
+				DEF2CB34111584CC00BF706B /* parser.c in Sources */,
+				DEF2CB35111584CC00BF706B /* pprint.c in Sources */,
+				DEF2CB36111584CC00BF706B /* streamio.c in Sources */,
+				DEF2CB37111584CC00BF706B /* tagask.c in Sources */,
+				DEF2CB38111584CC00BF706B /* tags.c in Sources */,
+				DEF2CB39111584CC00BF706B /* tidylib.c in Sources */,
+				DEF2CB3A111584CC00BF706B /* tmbstr.c in Sources */,
+				DEF2CB3B111584CC00BF706B /* utf8.c in Sources */,
+				DEF2CB3C111584CC00BF706B /* win32tc.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,12 +435,13 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ContactMapper_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "ContactMapper-Info.plist";
 				PRODUCT_NAME = ContactMapper;
 			};
@@ -209,10 +450,11 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ContactMapper_Prefix.pch;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "ContactMapper-Info.plist";
 				PRODUCT_NAME = ContactMapper;
 				VALIDATE_PRODUCT = YES;
@@ -227,6 +469,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.2;
 			};
@@ -240,6 +484,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "-lxml2";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.2;
 			};
